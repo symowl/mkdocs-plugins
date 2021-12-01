@@ -1,0 +1,12 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+requires = ["flit-core"]
+
+[project]
+dependencies = ["mkdocs", "pypinyin"]
+dynamic = ["description", "version"]
+name = "smp"
+
+[project.entry-points."mkdocs.plugins"]
+meta = "smp.meta:MetaPlugin"
+tags = "smp.tags:TagsPlugin"
