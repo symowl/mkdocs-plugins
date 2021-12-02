@@ -1,3 +1,6 @@
+# Copyright 2021 Symowl
+# SPDX-License-Identifier: Apache-2.0
+
 import binascii
 import hashlib
 

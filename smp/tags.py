@@ -1,3 +1,6 @@
+# Copyright 2021 Symowl
+# SPDX-License-Identifier: Apache-2.0
+
 from binascii import crc32
 from os.path import exists
 from typing import Dict, List, Union

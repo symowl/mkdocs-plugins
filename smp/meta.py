@@ -1,3 +1,6 @@
+# Copyright 2021 Symowl
+# SPDX-License-Identifier: Apache-2.0
+
 from typing import Dict, List, Union
 
 from mkdocs.config.base import Config
