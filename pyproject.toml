@@ -3,10 +3,18 @@ build-backend = "flit_core.buildapi"
 requires = ["flit-core"]
 
 [project]
+authors = [{email = "13601121148@163.com", name = "陈煜"}]
+classifiers = ["License :: OSI Approved :: Apache Software License"]
 dependencies = ["mkdocs", "pypinyin"]
 dynamic = ["description", "version"]
 name = "smp"
+readme = "README.md"
+requires-python = ">=3.6"
 
 [project.entry-points."mkdocs.plugins"]
 meta = "smp.meta:MetaPlugin"
 tags = "smp.tags:TagsPlugin"
+
+[project.urls]
+Source = "https://github.com/symowl/mkdocs-plugins"
+"源代码" = "https://gitee.com/symowl/mkdocs-plugins"
