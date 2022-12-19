@@ -1,5 +1,5 @@
-# Copyright (c) 2021 Symowl
-# SPDX-License-Identifier: MIT
+# Copyright (c) 2022 Symowl
+# SPDX-License-Identifier: Apache-2.0
 
 from typing import Any, Dict
 
