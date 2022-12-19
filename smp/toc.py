@@ -6,7 +6,7 @@ from typing import Any, Dict
 from markdown.extensions import Extension
 from markdown.extensions.toc import TocExtension
 
-from .slugify import ascii, crc32, md5, number, pinyin, sha1, unicode
+from smp.slugify import ascii, crc32, md5, number, pinyin, sha1, unicode
 
 
 def makeExtension(**kwargs: Dict[str, Any]) -> Extension:
