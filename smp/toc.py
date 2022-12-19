@@ -8,21 +8,23 @@ from markdown.extensions.toc import TocExtension
 
 from smp.slugify import ascii, crc32, md5, number, pinyin, sha1, unicode
 
+MODES = {
+    "ascii": ascii,
+    "crc": crc32,
+    "crc32": crc32,
+    "md5": md5,
+    "num": number,
+    "number": number,
+    "pinyin": pinyin,
+    "sha1": sha1,
+    "unicode": unicode
+}
+
 
 def makeExtension(**kwargs: Dict[str, Any]) -> Extension:
     mode = kwargs.get("slugify")
-    if mode in ["crc", "crc32"]:
-        kwargs["slugify"] = crc32
-    elif mode == "md5":
-        kwargs["slugify"] = md5
-    elif mode in ["num", "number"]:
-        kwargs["slugify"] = number
-    elif mode == "pinyin":
-        kwargs["slugify"] = pinyin
-    elif mode == "sha1":
-        kwargs["slugify"] = sha1
-    elif mode == "unicode":
-        kwargs["slugify"] = unicode
+    if mode in MODES:
+        kwargs["slugify"] = MODES[mode]
     else:
         kwargs["slugify"] = ascii
     return TocExtension(**kwargs)

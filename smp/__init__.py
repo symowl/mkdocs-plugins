@@ -3,4 +3,4 @@ Copyright (c) 2022 Symowl
 SPDX-License-Identifier: Apache-2.0
 """
 
-__version__ = "1.9.1"
+__version__ = "1.9.2"

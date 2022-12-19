@@ -5,7 +5,7 @@ requires = ["flit_core >=3.2,<4"]
 [project]
 authors = [{email = "13601121148@163.com", name = "Symowl"}]
 classifiers = ["License :: OSI Approved :: Apache Software License"]
-dependencies = ["mkdocs", "pypinyin"]
+dependencies = ["markdown", "pypinyin"]
 dynamic = ["description", "version"]
 name = "smp"
 readme = "README.md"
